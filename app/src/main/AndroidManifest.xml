@@ -19,7 +19,8 @@
         <activity
             android:name=".LockScreen"
             android:windowSoftInputMode="adjustPan"></activity>
-        <activity android:name=".LightScreen"></activity>
+        <activity android:name=".LightScreen"
+            android:windowSoftInputMode="adjustPan"></activity>
     </application>
 
 </manifest>

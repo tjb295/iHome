@@ -61,6 +61,7 @@
         android:layout_marginTop="36dp"
         android:text="Lock Devices"
         android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp"
         android:typeface="serif"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
