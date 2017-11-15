@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context="net.androidbootcamp.ihome.LockScreen">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="202dp"
         android:layout_height="309dp"
         android:layout_marginBottom="8dp"
@@ -21,7 +23,8 @@
         <RelativeLayout
             android:id="@+id/RelativeLayout01"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            tools:background="@android:color/holo_blue_dark">
 
             <LinearLayout
                 android:id="@+id/LinearLayout01"
@@ -34,69 +37,40 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="HELLO"></TextView>
+                    android:text="Living Room"></TextView>
 
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/OnOff"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="20dip"
-                    android:text="LIGHT NUMBER 2"></TextView>
+                    android:text="ON" />
 
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dip"
-                    android:text="LIGHT NUMBER 2"></TextView>
-
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dip"
-                    android:text="LIGHT NUMBER 2"></TextView>
-
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dip"
-                    android:text="LIGHT NUMBER 2"></TextView>
-
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dip"
-                    android:text="LIGHT NUMBER 2"></TextView>
-
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dip"
-                    android:text="@+id/TextView01"></TextView>
-
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dip"
-                    android:text="@+id/TextView01"></TextView>
             </LinearLayout>
         </RelativeLayout>
 
     </ScrollView>
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:text="Lock Devices"
-        android:textAllCaps="false"
-        tools:layout_editor_absoluteX="84dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:text="ADD NEW DEVICE"
+        android:typeface="serif"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="422dp" />
+
 </android.support.constraint.ConstraintLayout>
