@@ -2,6 +2,7 @@ package net.androidbootcamp.ihome;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.View;
@@ -12,6 +13,7 @@ public class LockScreen extends AppCompatActivity {
     int numDevices = 0;
     String deviceName = "Whattup";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +22,10 @@ public class LockScreen extends AppCompatActivity {
 
     public void addNewDevice(View view){
 
-
+        EditText deviceInput = (EditText) findViewById(R.id.deviceInput);
         LinearLayout layout1 = (LinearLayout) findViewById(R.id.LinearLayout01);
         TextView device = new TextView(this);
-        device.setText(deviceName);
+        device.setText(deviceInput.getText());
         device.setId(numDevices ++);
         layout1.addView(device);
     }

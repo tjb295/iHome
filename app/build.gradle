@@ -17,17 +17,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    repositories {
-        maven { url 'http://repo1.maven.org/maven2' }
+        repositories {
+            mavenCentral()
+            jcenter()
+            google()
+            maven { url 'http://repo1.maven.org/maven2' }
+
+        }
     }
-}
+
 
 dependencies {
+    compile 'com.squareup:javawriter:2.5.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
     testCompile 'junit:junit:4.12'
 }
