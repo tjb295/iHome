@@ -51,6 +51,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@android:color/holo_blue_bright"
+        android:onClick="lightActivity"
         android:text="LIGHTS"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/L"
