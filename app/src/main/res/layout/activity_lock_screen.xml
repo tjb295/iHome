@@ -9,90 +9,81 @@
     <ScrollView
         android:layout_width="202dp"
         android:layout_height="309dp"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="65dp">
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <RelativeLayout
             android:id="@+id/RelativeLayout01"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
+            android:layout_height="fill_parent">
 
             <LinearLayout
                 android:id="@+id/LinearLayout01"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
+                    android:text="HELLO"></TextView>
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
+                    android:text="LIGHT NUMBER 2"></TextView>
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
+                    android:text="LIGHT NUMBER 2"></TextView>
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
+                    android:text="LIGHT NUMBER 2"></TextView>
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
+                    android:text="LIGHT NUMBER 2"></TextView>
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
+                    android:text="LIGHT NUMBER 2"></TextView>
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
+                    android:text="@+id/TextView01"></TextView>
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
-
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dip"
-                    android:text="@+id/TextView01" >
-                </TextView>
+                    android:text="@+id/TextView01"></TextView>
             </LinearLayout>
         </RelativeLayout>
 
