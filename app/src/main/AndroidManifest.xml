@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".LockScreen"
-                  android:windowSoftInputMode="stateHidden"></activity>
+                  android:windowSoftInputMode="adjustPan">
+            
+        </activity>
     </application>
 
 </manifest>
