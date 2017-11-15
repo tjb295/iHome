@@ -32,6 +32,9 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
         EditText deviceInput = (EditText) findViewById(R.id.deviceInput);
         LinearLayout layout1 = (LinearLayout) findViewById(R.id.LinearLayout01);
         TextView device = new TextView(this);
+        if(deviceInput.getText().toString() == ""){
+            return;
+        }
         device.setText(deviceInput.getText());
         deviceInput.setText("");
         device.setId(numDevices ++);
