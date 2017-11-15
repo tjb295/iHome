@@ -13,12 +13,17 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
     //get linear layout so we can add child classes when adding a new device
     int numDevices = 0;
     String deviceName = "Whattup";
+    public void init(){
+        Button firstButton = (Button) findViewById(R.id.OnOff);
+        firstButton.setOnClickListener(this);
+    }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lock_screen);
+        init();
     }
 
     public void addNewDevice(View view){
@@ -32,7 +37,7 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
 
         //Add button with device
         Button newButton = new Button(this);
-        newButton.setText("on");
+        newButton.setText("locked");
         newButton.setOnClickListener(this);
         layout1.addView(newButton);
     }
@@ -40,10 +45,10 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onClick(View v){
         Button button = (Button) v;
-        if(button.getText() == "on"){
-            button.setText("off");
+        if(button.getText() == "locked"){
+            button.setText("unlocked");
         }
-        else button.setText("on");
+        else button.setText("locked");
     }
 
 
