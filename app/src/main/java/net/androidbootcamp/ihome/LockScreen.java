@@ -2,6 +2,7 @@ package net.androidbootcamp.ihome;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,5 +29,10 @@ public class LockScreen extends AppCompatActivity {
         device.setText(deviceInput.getText());
         device.setId(numDevices ++);
         layout1.addView(device);
+
+        //Add button with device
+        Button newButton = new Button(this);
+        newButton.setText("On");
+        layout1.addView(newButton);
     }
 }
