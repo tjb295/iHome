@@ -23,8 +23,9 @@
         android:id="@+id/L"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="activity_lock_screen.xml"
         android:text="Button"
-        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="218dp" />
 
 </android.support.constraint.ConstraintLayout>
