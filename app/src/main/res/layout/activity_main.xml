@@ -4,28 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:backgroundTint="@android:color/darker_gray"
     tools:context="net.androidbootcamp.ihome.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="222dp"
         android:layout_height="65dp"
         android:text="Welcome to iHome"
         android:textSize="24sp"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138"
-        app:layout_constraintHorizontal_bias="0.503" />
+        app:layout_constraintVertical_bias="0.138" />
 
     <Button
         android:id="@+id/L"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="activity_lock_screen.xml"
-        android:text="Button"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="218dp" />
+        android:layout_width="137dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="LOCKS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.604"
+        tools:layout_editor_absoluteX="124dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="152dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="LIGHTS"
+        app:layout_constraintBottom_toTopOf="@+id/L"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.507"
+        tools:layout_editor_absoluteX="116dp" />
 
 </android.support.constraint.ConstraintLayout>
