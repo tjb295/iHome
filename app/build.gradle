@@ -17,14 +17,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-        repositories {
-            mavenCentral()
-            jcenter()
-            google()
-            maven { url 'http://repo1.maven.org/maven2' }
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+        maven { url 'http://repo1.maven.org/maven2' }
 
-        }
     }
+}
 
 
 dependencies {

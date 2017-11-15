@@ -17,4 +17,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,LockScreen.class);
         startActivity(intent);
     }
+    public void lightActivity(View view){
+        Intent intent = new Intent(this,LightScreen.class);
+        startActivity(intent);
+    }
 }
