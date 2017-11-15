@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.View;
 
-public class LockScreen extends AppCompatActivity {
+public class LockScreen extends AppCompatActivity implements View.OnClickListener{
 
     //get linear layout so we can add child classes when adding a new device
     int numDevices = 0;
@@ -32,7 +32,19 @@ public class LockScreen extends AppCompatActivity {
 
         //Add button with device
         Button newButton = new Button(this);
-        newButton.setText("On");
+        newButton.setText("on");
+        newButton.setOnClickListener(this);
         layout1.addView(newButton);
     }
+
+    @Override
+    public void onClick(View v){
+        Button button = (Button) v;
+        if(button.getText() == "on"){
+            button.setText("off");
+        }
+        else button.setText("on");
+    }
+
+
 }
