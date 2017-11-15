@@ -13,6 +13,7 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
     //get linear layout so we can add child classes when adding a new device
     int numDevices = 0;
     String deviceName = "Whattup";
+    String [] deviceNames = new String[20];
     public void init(){
         Button firstButton = (Button) findViewById(R.id.OnOff);
         firstButton.setOnClickListener(this);
@@ -32,6 +33,7 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
         LinearLayout layout1 = (LinearLayout) findViewById(R.id.LinearLayout01);
         TextView device = new TextView(this);
         device.setText(deviceInput.getText());
+        deviceInput.setText("");
         device.setId(numDevices ++);
         layout1.addView(device);
 
