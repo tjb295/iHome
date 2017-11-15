@@ -43,7 +43,7 @@
                     android:id="@+id/OnOff"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@android:color/holo_blue_bright"
+                    android:backgroundTint="@android:color/darker_gray"
                     android:onClick="onClick"
                     android:text="locked" />
 

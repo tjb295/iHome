@@ -8,16 +8,20 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.View;
+import android.graphics.drawable.ColorDrawable;
 
 public class LockScreen extends AppCompatActivity implements View.OnClickListener{
 
     //get linear layout so we can add child classes when adding a new device
     int numDevices = 0;
+    int holoblue;
     String deviceName = "Whattup";
     String [] deviceNames = new String[20];
     public void init(){
         Button firstButton = (Button) findViewById(R.id.OnOff);
         firstButton.setOnClickListener(this);
+        holoblue = ((ColorDrawable)firstButton.getBackground()).getColor();
+
     }
 
 
@@ -43,7 +47,7 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
 
         //Add button with device
         Button newButton = new Button(this);
-        newButton.setBackgroundColor(Color.BLUE);
+        newButton.setBackgroundColor(holoblue);
         newButton.setText("locked");
         newButton.setOnClickListener(this);
         layout1.addView(newButton);
@@ -54,11 +58,11 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
         Button button = (Button) v;
         if(button.getText() == "locked"){
             button.setText("unlocked");
-            button.setBackgroundColor(Color.DKGRAY);
+            button.setBackgroundColor(Color.GRAY);
         }
         else{
             button.setText("locked");
-            button.setBackgroundColor(Color.BLUE);
+            button.setBackgroundColor(holoblue);
         }
     }
 
