@@ -1,5 +1,6 @@
 package net.androidbootcamp.ihome;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -42,6 +43,7 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
 
         //Add button with device
         Button newButton = new Button(this);
+        newButton.setBackgroundColor(Color.BLUE);
         newButton.setText("locked");
         newButton.setOnClickListener(this);
         layout1.addView(newButton);
@@ -52,8 +54,12 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
         Button button = (Button) v;
         if(button.getText() == "locked"){
             button.setText("unlocked");
+            button.setBackgroundColor(Color.DKGRAY);
         }
-        else button.setText("locked");
+        else{
+            button.setText("locked");
+            button.setBackgroundColor(Color.BLUE);
+        }
     }
 
 

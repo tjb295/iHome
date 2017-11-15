@@ -22,6 +22,8 @@ public class LightScreen extends AppCompatActivity {
         EditText deviceInput = (EditText) findViewById(R.id.deviceInput);
         LinearLayout layout1 = (LinearLayout) findViewById(R.id.LinearLayout01);
         TextView device = new TextView(this);
+
+        //check if the space is blank
         if(deviceInput.getText().toString() == ""){
             return;
         }
