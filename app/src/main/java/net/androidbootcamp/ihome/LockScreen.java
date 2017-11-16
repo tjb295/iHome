@@ -20,7 +20,7 @@ public class LockScreen extends AppCompatActivity implements View.OnClickListene
     public void init(){
         Button firstButton = (Button) findViewById(R.id.OnOff);
         firstButton.setOnClickListener(this);
-        holoblue = ((ColorDrawable)firstButton.getBackground()).getColor();
+        //holoblue = ((ColorDrawable)firstButton.getBackground()).getColor();
 
     }
 

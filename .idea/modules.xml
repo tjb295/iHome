@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\tback\Documents\iHome\app\app.iml" filepath="C:\Users\tback\Documents\iHome\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../tback/Documents/iHome/app/app.iml" filepath="$PROJECT_DIR$/../../../../../tback/Documents/iHome/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/iHome.iml" filepath="$PROJECT_DIR$/iHome.iml" />
-      <module fileurl="file://C:\Users\tback\Documents\iHome\iHome2.iml" filepath="C:\Users\tback\Documents\iHome\iHome2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../tback/Documents/iHome/iHome2.iml" filepath="$PROJECT_DIR$/../../../../../tback/Documents/iHome/iHome2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iHomeReal.iml" filepath="$PROJECT_DIR$/iHomeReal.iml" />
     </modules>
   </component>
 </project>
